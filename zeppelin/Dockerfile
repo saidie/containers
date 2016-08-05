@@ -12,4 +12,6 @@ RUN set -x && \
     cd $ZEPPELIN_PATH && \
     tar xf /tmp/zeppelin.tgz --strip-components=1
 
+EXPOSE 8080 8081
+
 CMD $ZEPPELIN_PATH/bin/zeppelin.sh
