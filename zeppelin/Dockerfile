@@ -10,7 +10,8 @@ RUN set -x && \
     curl -L $ZEPPELIN_URL -o /tmp/zeppelin.tgz && \
     mkdir $ZEPPELIN_PATH && \
     cd $ZEPPELIN_PATH && \
-    tar xf /tmp/zeppelin.tgz --strip-components=1
+    tar xf /tmp/zeppelin.tgz --strip-components=1 && \
+    $ZEPPELIN_PATH/bin/install-interpreter.sh -a
 
 EXPOSE 8080 8081
 
