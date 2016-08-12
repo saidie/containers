@@ -2,6 +2,7 @@
 
 ```sh
 docker build -t saidie/zeppelin:0.6.0 zeppelin
+docker build -t saidie/redis:unstable redis-git
 ```
 
 ## License
