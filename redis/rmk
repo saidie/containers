@@ -2,4 +2,4 @@
 
 mkdir -p ~/var/redis
 docker run -v $PWD:/src saidie/redis /bin/sh -c "cd /src; make"
-cp build/libwvtre.so ~/var/redis/
+cp build/libwvltr.so ~/var/redis/
