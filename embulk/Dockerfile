@@ -5,8 +5,8 @@ RUN apk --no-cache add curl && \
     chmod +x /embulk/bin/embulk && \
     apk del curl
 
-COPY docker-entrypoint.sh /usr/local/bin
+COPY embulk /usr/local/bin
 
-ENTRYPOINT ["docker-entrypoint.sh"]
+WORKDIR /embulk
 
-CMD ["/bin/sh", "/embulk/bin/embulk"]
+CMD ["embulk"]
