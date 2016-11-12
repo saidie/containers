@@ -1,4 +1,4 @@
-FROM java:8-jre-alpine
+FROM frolvlad/alpine-oraclejdk8:slim
 
 RUN apk --no-cache add curl && \
     curl --create-dirs -o /embulk/bin/embulk -L "http://dl.embulk.org/embulk-latest.jar" && \
