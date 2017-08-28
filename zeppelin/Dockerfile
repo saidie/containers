@@ -1,6 +1,6 @@
 FROM java:8-alpine
 
-ENV ZEPPELIN_VERSION 0.6.0
+ENV ZEPPELIN_VERSION 0.7.1
 ENV ZEPPELIN_URL http://www.apache.org/dist/zeppelin/zeppelin-$ZEPPELIN_VERSION/zeppelin-$ZEPPELIN_VERSION-bin-netinst.tgz
 ENV ZEPPELIN_PATH /usr/share/zeppelin
 
